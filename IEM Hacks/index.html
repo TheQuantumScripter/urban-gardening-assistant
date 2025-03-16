@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Gardening Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="banner">
+        <h1>Urban Gardening Assistant</h1>
+        <p id="clickIndicator">Click here</p>
+    </header>
+    <main id="content" style="display: none;">
+        <section id="plantSelection">
+            <h2>Select Your Plants</h2>
+            <button data-plant-type="herbs">Herbs</button>
+            <button data-plant-type="vegetables">Vegetables</button>
+            <button data-plant-type="fruits">Fruits</button>
+            <button data-plant-type="flowers">Flowers</button>
+            <div id="plantList"></div>
+        </section>
+        <section id="plantGuide" style="display: none;">
+            <h2>Plant Guide</h2>
+            <div id="guideContent"></div>
+            <div id="reminderSection">
+                <h3>Set Reminder</h3>
+                <label for="reminderDays">Days:</label>
+                <input type="number" id="reminderDays" value="1">
+                <label for="reminderHours">Hours:</label>
+                <input type="number" id="reminderHours" value="0">
+                <button id="setReminder">Set</button>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>By The Code Couple</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
